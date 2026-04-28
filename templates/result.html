@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Prediction Result</h1>
+
+        <h2>{{ prediction }}</h2>
+
+        <p><strong>Suggestion:</strong></p>
+        <p>{{ suggestion }}</p>
+
+        <p><strong>Friendly Support Message:</strong></p>
+        <p>
+            You are not alone. Small consistent steps can create big improvements.
+            Take care of your mental health just like your physical health.
+        </p>
+
+        <a href="/">Go Back</a>
+    </div>
+
+</body>
+</html>

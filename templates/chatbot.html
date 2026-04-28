@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Friendly Support Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Friendly Support Chatbot</h1>
+
+        <form action="/chatbot" method="POST">
+
+            <label>How are you feeling today?</label>
+
+            <input
+                type="text"
+                name="user_message"
+                placeholder="Type your message here..."
+                required
+            >
+
+            <button type="submit">Send</button>
+        </form>
+
+        {% if bot_reply %}
+            <h2>Support Reply</h2>
+            <p>{{ bot_reply }}</p>
+        {% endif %}
+
+        <a href="/">Go Back Home</a>
+    </div>
+
+</body>
+</html>
