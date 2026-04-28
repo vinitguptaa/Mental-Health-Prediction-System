@@ -1,36 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Recommendations</title>
+    <title>Wellness Recommendations</title>
+
     <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png">
+
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
     <div class="container">
-        <h1>Wellness Recommendations</h1>
 
-        <h2>Suggested Actions</h2>
+        <div class="hero-section">
+            <h1>Wellness Recommendations</h1>
+
+            <p class="subtitle">
+                Small consistent improvements in daily routine can significantly
+                improve mental well-being and emotional balance.
+            </p>
+        </div>
+
+        <h2>Daily Mental Wellness Tips</h2>
 
         <ul>
-            <li>Maintain a proper sleep schedule</li>
-            <li>Reduce screen time before sleep</li>
-            <li>Take short breaks while studying</li>
-            <li>Practice meditation or breathing exercises</li>
-            <li>Talk to trusted friends, mentors, or family</li>
-            <li>Seek counselor support if stress continues</li>
+            <li>Maintain a regular sleep schedule (7–8 hours)</li>
+            <li>Take short breaks during study or work sessions</li>
+            <li>Avoid comparing your progress with others</li>
+            <li>Talk openly with trusted friends, mentors, or family</li>
+            <li>Reduce excessive screen time before sleeping</li>
+            <li>Practice simple breathing exercises during stress</li>
+            <li>Follow a balanced diet and stay hydrated</li>
         </ul>
 
-        <h2>Counselor Recommendation</h2>
+        <h2>When to Seek Extra Support</h2>
 
         <p>
-            If you are feeling continuously stressed or emotionally overwhelmed,
-            consider talking to your college counselor, mentor, or a mental health professional.
+            If stress, sadness, anxiety, or emotional exhaustion continues
+            for a long period and starts affecting daily life, it is important
+            to seek support from a counselor, mentor, or mental health professional.
         </p>
 
-        <a href="/chatbot">Go to Friendly Support Chatbot</a>
-        <a href="/">Go Back Home</a>
-    </div>
+        <h2>Suggested Support Options</h2>
 
+        <ul>
+            <li>College Counselor or Faculty Mentor</li>
+            <li>Trusted Friend or Family Member</li>
+            <li>Professional Mental Health Counselor</li>
+            <li>Career Guidance Mentor for placement stress</li>
+        </ul>
+
+        <a href="/chatbot">Talk to Friendly Support Chatbot</a>
+
+        <a href="/">Go Back to Home</a>
+
+    </div>
+<footer style="text-align: center; margin-top: 40px; padding: 20px; color: #666; font-size: 14px;">
+    <p>
+        AI-Based Mental Health Prediction and Support System
+    </p>
+
+    <p>
+        Developed using Python, Flask, Machine Learning, and Random Forest Classifier
+    </p>
+
+    <p>
+        Designed for student mental wellness support and early stress detection
+    </p>
+</footer>
 </body>
 </html>

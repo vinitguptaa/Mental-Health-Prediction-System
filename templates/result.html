@@ -2,27 +2,61 @@
 <html>
 <head>
     <title>Prediction Result</title>
+
     <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png">
+
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
     <div class="container">
-        <h1>Prediction Result</h1>
+
+        <div class="hero-section">
+            <h1>Mental Wellness Assessment Result</h1>
+
+            <p class="subtitle">
+                Your mental wellness risk has been analyzed based on your lifestyle,
+                academic pressure, stress levels, and emotional well-being factors.
+            </p>
+        </div>
 
         <h2>{{ prediction }}</h2>
 
-        <p><strong>Suggestion:</strong></p>
+        <p><strong>Personalized Suggestion:</strong></p>
         <p>{{ suggestion }}</p>
 
         <p><strong>Friendly Support Message:</strong></p>
         <p>
-            You are not alone. Small consistent steps can create big improvements.
-            Take care of your mental health just like your physical health.
+            Remember, mental health is a journey, not a destination.
+            Small daily improvements in sleep, routine, and communication
+            can create meaningful long-term change.
         </p>
 
-        <a href="/">Go Back</a>
-    </div>
+        <p><strong>Recommended Next Step:</strong></p>
+        <p>
+            If stress continues for a long time, consider speaking with
+            a trusted mentor, counselor, or mental health professional.
+        </p>
 
+        <a href="/recommendation">View Wellness Recommendations</a>
+
+        <a href="/chatbot">Talk to Friendly Support Chatbot</a>
+
+        <a href="/">Go Back to Home</a>
+
+    </div>
+<footer style="text-align: center; margin-top: 40px; padding: 20px; color: #666; font-size: 14px;">
+    <p>
+        AI-Based Mental Health Prediction and Support System
+    </p>
+
+    <p>
+        Developed using Python, Flask, Machine Learning, and Random Forest Classifier
+    </p>
+
+    <p>
+        Designed for student mental wellness support and early stress detection
+    </p>
+</footer>
 </body>
 </html>

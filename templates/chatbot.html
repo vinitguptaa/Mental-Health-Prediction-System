@@ -2,35 +2,74 @@
 <html>
 <head>
     <title>Friendly Support Chatbot</title>
+
     <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png">
+
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
 
     <div class="container">
-        <h1>Friendly Support Chatbot</h1>
 
-        <form action="/chatbot" method="POST">
+        <div class="hero-section">
+            <h1>Friendly Mental Wellness Support Chatbot</h1>
+
+            <p class="subtitle">
+                You can talk freely about stress, exams, anxiety, sleep,
+                career pressure, loneliness, or anything affecting your peace of mind.
+            </p>
+        </div>
+
+        <form method="POST">
 
             <label>How are you feeling today?</label>
 
             <input
                 type="text"
                 name="user_message"
-                placeholder="Type your message here..."
+                placeholder="Example: I feel stressed about exams"
                 required
             >
 
-            <button type="submit">Send</button>
+            <button type="submit">Talk to Chatbot</button>
+
         </form>
 
         {% if bot_reply %}
-            <h2>Support Reply</h2>
-            <p>{{ bot_reply }}</p>
+
+            <div style="margin-top: 30px;">
+
+                <h2>Support Response</h2>
+
+                <p>
+                    <strong>You:</strong><br>
+                    {{ request.form['user_message'] }}
+                </p>
+
+                <p>
+                    <strong>Chatbot:</strong><br>
+                    {{ bot_reply }}
+                </p>
+
+            </div>
+
         {% endif %}
 
-        <a href="/">Go Back Home</a>
-    </div>
+        <a href="/">Go Back to Home</a>
 
+    </div>
+<footer style="text-align: center; margin-top: 40px; padding: 20px; color: #666; font-size: 14px;">
+    <p>
+        AI-Based Mental Health Prediction and Support System
+    </p>
+
+    <p>
+        Developed using Python, Flask, Machine Learning, and Random Forest Classifier
+    </p>
+
+    <p>
+        Designed for student mental wellness support and early stress detection
+    </p>
+</footer>
 </body>
 </html>
