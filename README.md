@@ -73,4 +73,4 @@ python app.py
 - Open issues or pull requests for improvements Include tests for changes that affect predictions
 
 ---
-Replace the demo URL above with your actual live demo link and I will update the README accordingly
+
