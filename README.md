@@ -5,7 +5,7 @@ A lightweight Flask application that predicts mental wellness risk for students 
 
 ## Live Demo
 
-Visit the live demo at: https://example.com
+Visit the live demo at: https://mental-health-prediction-system-xrhn.onrender.com/
 
 ## Features
 
